@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
+  <title><%= full_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
  
@@ -10,12 +10,11 @@
     
  
   </head>
-  <body class="application">
-    <main role="main">
-      <div class="container">
-        <div class="row">
-          <%= yield %>
-        </div>
-    </main>
+  <body>
+    <%= render 'layouts/header' %>
+    <div class="container">
+      <%= yield %>
+      <%= render 'layouts/footer' %>
+    </div>
   </body>
 </html>

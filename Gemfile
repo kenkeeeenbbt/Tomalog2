@@ -25,6 +25,7 @@ gem 'sassc', '~> 2.0.0'
 gem 'uglifier'
 gem 'jquery-rails'
 gem 'bootstrap'
+gem 'bootstrap-sass', '3.3.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -48,6 +49,8 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  gem 'minitest'
+  gem 'minitest-reporters'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
